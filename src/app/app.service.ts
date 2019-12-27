@@ -16,7 +16,7 @@ export class AppService {
   deleteDetails(id){
     return this.http.delete('https://api.myjson.com/bins/dfm7w/'+id);
   }
-  
+
   getUser(id){
     return this.http.get('https://api.myjson.com/bins/dfm7w/'+id);
   }
