@@ -1,8 +1,9 @@
 <div class="container-fluid mt-5">
-   <div class="clearfix"></div>
+
 	<div class="col-12 mb-4 text-right">
 		<button class="btn btn-success">Add</button>
 	</div>
+
 	<div class="col-12">
 		<table class="table table-bordered  table-dark">
 			<thead>
@@ -19,7 +20,8 @@
 					<td class="text-center">{{user.first_name}}</td>
           <td class="text-center">{{user.email}}</td>
 					<td class="text-center">
-						<button class="btn btn-success btn-sm mr-2">Edit</button><button class="btn btn-danger btn-sm">Delete</button>
+						<button (click)="editDetails(user)" class="btn btn-success btn-sm mr-2">Edit</button>
+            <button (click)="deleteDetails(user)" class="btn btn-danger btn-sm">Delete</button>
 					</td>
 				</tr>
 			</tbody>
