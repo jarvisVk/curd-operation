@@ -7,22 +7,17 @@
 		<table class="table table-bordered  table-dark">
 			<thead>
 				<tr>
-					<th class="text-center" scope="col">First</th>
+					<th class="text-center" scope="col">ID</th>
 					<th class="text-center" scope="col">Last</th>
+          <th class="text-center" scope="col">Email</th>
 					<th class="text-center" scope="col">Option</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td class="text-center">Mark</td>
-					<td class="text-center">Otto</td>
-					<td class="text-center">
-						<button class="btn btn-success btn-sm mr-2">Edit</button><button class="btn btn-danger btn-sm">Delete</button>
-					</td>
-				</tr>
-				<tr>
-					<td class="text-center">Jacob</td>
-					<td class="text-center">Thornton</td>
+				<tr *ngFor="let user of users">
+					<td class="text-center">{{user.id}}</td>
+					<td class="text-center">{{user.first_name}}</td>
+          <td class="text-center">{{user.email}}</td>
 					<td class="text-center">
 						<button class="btn btn-success btn-sm mr-2">Edit</button><button class="btn btn-danger btn-sm">Delete</button>
 					</td>
